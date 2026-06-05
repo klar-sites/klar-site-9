@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact · The Still Current</title>
+  <meta name="description" content="Write to The Still Current with essay responses, collaboration notes, letters, and thoughtful correspondence." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container-wide site-header__inner">
+      <a class="brand" href="index.html" aria-label="The Still Current home">
+        <span class="brand__mark">S</span>
+        <span class="brand__text">
+          <span class="brand__name">The Still Current</span>
+          <span class="brand__tagline">Independent magazine</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="article.html">Article</a>
+        <a class="nav-link" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="cluster">
+        <button class="btn btn-outline btn-sm" type="button" aria-label="Toggle theme">Theme</button>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <nav class="container-wide mobile-nav__inner" aria-label="Mobile navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="article.html">Article</a>
+        <a class="nav-link" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container-wide hero__inner">
+        <div class="hero__content">
+          <span class="kicker">Correspondence</span>
+          <h1 class="hero__title">Write to a person, not a department.</h1>
+          <p class="dek">Send a response to an essay, propose a conversation, share a reading note, or simply leave a sentence at the door. Every message is read by the editor.</p>
+        </div>
+        <aside class="hero__aside" aria-label="Contact note">
+          <div class="issue-note">
+            <h2 class="issue-note__title">A small invitation</h2>
+            <p class="issue-note__text">The best letters rarely arrive polished. They begin with something noticed: a line that stayed, a disagreement with a pulse, a question that has not yet found its room.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid md:grid-cols-2 gap-10">
+        <div class="stack">
+          <span class="badge badge-primary">Editor’s desk</span>
+          <h2>What belongs here</h2>
+          <p class="dek">The Still Current is small by design. There is no submissions portal, no ticket number, no automated promise to “circle back.” If your note feels like correspondence, it belongs here.</p>
+
+          <div class="contact-panel shadow-sm">
+            <h3 class="card__title">You might write about</h3>
+            <div class="contact-panel__rule"></div>
+            <div class="stack gap-4">
+              <p><strong>Responses.</strong> Tell us which essay followed you into the week, or where you found yourself arguing in the margin.</p>
+              <p><strong>Conversations.</strong> Propose an interview, reading group, event, or quiet collaboration with a clear reason for its shape.</p>
+              <p><strong>Letters.</strong> Send a brief dispatch from your own desk, table, train window, garden, or half-finished notebook.</p>
+            </div>
+          </div>
+
+          <div class="meta">
+            <span class="meta__item">Replies within a week when possible</span>
+            <span class="meta__item">No PR blasts, please</span>
+          </div>
+        </div>
+
+        <form class="contact-panel stack" action="#" method="post">
+          <div class="stack gap-3">
+            <span class="kicker">Send a note</span>
+            <h2 class="text-3xl">Begin anywhere.</h2>
+            <p class="caption">A real endpoint can replace the placeholder action when the magazine is ready to receive mail.</p>
+          </div>
+
+          <label class="field">
+            <span class="label">Your name</span>
+            <input class="input" type="text" name="name" autocomplete="name" placeholder="Ada Brooks" required />
+          </label>
+
+          <label class="field">
+            <span class="label">Email</span>
+            <input class="input" type="email" name="email" autocomplete="email" placeholder="ada@example.com" required />
+          </label>
+
+          <label class="field">
+            <span class="label">What kind of note is this?</span>
+            <select class="select" name="topic">
+              <option>Response to an essay</option>
+              <option>Collaboration or conversation</option>
+              <option>Letter to the editor</option>
+              <option>Subscription question</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="label">Message</span>
+            <textarea class="textarea" name="message" placeholder="I wanted to write because..." required></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Send note</button>
+          <p class="caption">By sending, you are simply starting a conversation. Nothing will be added to a mailing list unless you ask.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container-narrow">
+        <blockquote class="quote-card">
+          <p class="quote-card__text">Correspondence is the old technology of taking another person’s attention seriously.</p>
+          <p class="quote-card__byline">— The Still Current</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="newsletter">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="stack">
+              <span class="badge badge-accent">Monthly letter</span>
+              <h2>If you would rather listen first, subscribe.</h2>
+              <p>One monthly dispatch with new essays, editor notes, and fragments from the reading table.</p>
+            </div>
+            <form class="stack" action="#" method="post">
+              <label class="field">
+                <span class="label text-background">Email address</span>
+                <input class="input" type="email" name="email" placeholder="reader@example.com" required />
+              </label>
+              <button class="btn btn-secondary" type="submit">Subscribe</button>
+              <p class="caption text-background opacity-70">No urgency. No daily noise. Just one careful note when there is something worth sending.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-wide site-footer__inner">
+      <div class="stack">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">S</span>
+          <span class="brand__text">
+            <span class="brand__name">The Still Current</span>
+            <span class="brand__tagline">Essays in a quieter key</span>
+          </span>
+        </a>
+        <p class="caption">An independent digital magazine for readers who still believe attention is a craft.</p>
+      </div>
+      <nav class="cluster" aria-label="Footer navigation">
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="article.html">Article</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var themeButtons = document.querySelectorAll('[aria-label="Toggle theme"]');
+      themeButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          document.documentElement.classList.toggle('dark');
+        });
+      });
+
+      var menuButtons = document.querySelectorAll('[aria-label="Toggle menu"]');
+      menuButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          var isOpen = document.body.classList.toggle('nav-open');
+          button.setAttribute('aria-expanded', String(isOpen));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

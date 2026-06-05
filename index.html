@@ -1,14 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>klar-site-9</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <h1>klar-site-9</h1>
-    <p>Edit this page with Klar.</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Still Current · Essays in a quieter key</title>
+  <meta name="description" content="An independent digital magazine for thoughtful essays on attention, reading life, domestic rituals, and ordinary days." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container-wide site-header__inner">
+      <a class="brand" href="index.html" aria-label="The Still Current home">
+        <span class="brand__mark">S</span>
+        <span class="brand__text">
+          <span class="brand__name">The Still Current</span>
+          <span class="brand__tagline">Independent magazine</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="article.html">Article</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <div class="cluster">
+        <button class="btn btn-outline btn-sm" type="button" aria-label="Toggle theme">Theme</button>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <nav class="container-wide mobile-nav__inner" aria-label="Mobile navigation">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="article.html">Article</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container-wide hero__inner">
+        <div class="hero__content">
+          <span class="kicker">Issue 07 · Margins</span>
+          <h1 class="hero__title">Essays for the hours that ask us to slow down.</h1>
+          <p class="dek">The Still Current is an independent digital magazine about attention, domestic rituals, reading life, and the private architecture of ordinary days.</p>
+          <div class="cluster">
+            <a class="btn btn-primary" href="article.html">Read the feature</a>
+            <a class="btn btn-outline" href="#feed">Browse the issue</a>
+          </div>
+        </div>
+        <aside class="hero__aside" aria-label="Editor note">
+          <div class="issue-note">
+            <h2 class="issue-note__title">Editor’s note</h2>
+            <p class="issue-note__text">This month begins in the margins: the penciled thought, the paused walk, the room left slightly unfinished. We are interested in the places where attention gathers before it becomes performance.</p>
+          </div>
+          <div class="meta">
+            <span class="meta__item">Six new pieces</span>
+            <span class="meta__item">No infinite scroll</span>
+            <span class="meta__item">One monthly letter</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-wide">
+        <article class="feature-story">
+          <a class="feature-story__media" href="article.html" aria-label="Read On keeping a room for unfinished thoughts">
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1400&q=80" alt="A stack of books in quiet afternoon light" />
+          </a>
+          <div class="feature-story__body">
+            <div class="stack">
+              <span class="badge badge-accent">Featured essay</span>
+              <h2 class="feature-story__title"><a href="article.html">On keeping a room for unfinished thoughts</a></h2>
+              <p class="dek">A meditation on notebooks, domestic thresholds, and the strange mercy of leaving certain questions unresolved.</p>
+            </div>
+            <div class="meta">
+              <span class="meta__item">By Mara Ellison</span>
+              <span class="meta__item">12 minute read</span>
+              <span class="meta__item">January 18</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pt-0" id="feed">
+      <div class="container-wide">
+        <div class="cluster justify-between mb-8">
+          <div>
+            <span class="kicker">Curated feed</span>
+            <h2>Recently from the issue</h2>
+          </div>
+          <a class="cta-link" href="article.html">Start with the long read</a>
+        </div>
+
+        <div class="post-feed">
+          <article class="post-row">
+            <div class="post-row__number">01</div>
+            <div>
+              <span class="kicker">Reading life</span>
+              <h2 class="post-row__title"><a href="article.html">The book that waits on the chair</a></h2>
+            </div>
+            <p class="post-row__excerpt">Why the most important reading sometimes happens before the first page is turned, in the pause between intention and beginning.</p>
+          </article>
+
+          <article class="post-row">
+            <div class="post-row__number">02</div>
+            <div>
+              <span class="kicker">Notebook</span>
+              <h2 class="post-row__title"><a href="article.html">A field guide to useful silence</a></h2>
+            </div>
+            <p class="post-row__excerpt">On attention, small rooms, and the discipline of not filling every pause just because the room can hold more noise.</p>
+          </article>
+
+          <article class="post-row">
+            <div class="post-row__number">03</div>
+            <div>
+              <span class="kicker">Domestic weather</span>
+              <h2 class="post-row__title"><a href="article.html">What the kitchen table knows by dusk</a></h2>
+            </div>
+            <p class="post-row__excerpt">A short essay about crumbs, envelopes, lamplight, and the household surfaces that collect the evidence of our days.</p>
+          </article>
+
+          <article class="post-row">
+            <div class="post-row__number">04</div>
+            <div>
+              <span class="kicker">Letter</span>
+              <h2 class="post-row__title"><a href="contact.html">Correspondence from the edge of winter</a></h2>
+            </div>
+            <p class="post-row__excerpt">A personal dispatch about weather, work, and the sentences we save for later because they still need to become true.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid md:grid-cols-3 gap-8">
+        <div class="card">
+          <div class="card__header">
+            <span class="badge">Editorial habit</span>
+            <h3 class="card__title">Slow publication</h3>
+          </div>
+          <div class="card__body">
+            <p>We publish fewer pieces with more attention to shape, sequence, and the atmosphere around each sentence.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <span class="badge">Reading promise</span>
+            <h3 class="card__title">No urgency theater</h3>
+          </div>
+          <div class="card__body">
+            <p>No feeds engineered to exhaust you, no pop-up urgency, and no design that confuses activity with care.</p>
+          </div>
+        </div>
+        <blockquote class="quote-card">
+          <p class="quote-card__text">A good essay does not demand attention. It earns the reader’s willingness to remain.</p>
+          <p class="quote-card__byline">— From the editor’s desk</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="stack">
+              <span class="badge badge-accent">Monthly letter</span>
+              <h2>Receive one careful dispatch each month.</h2>
+              <p>Notes on the newest issue, reading fragments, and a few things worth carrying into a quieter weekend.</p>
+            </div>
+            <form class="stack" action="#" method="post">
+              <label class="field">
+                <span class="label text-background">Email address</span>
+                <input class="input" type="email" name="email" placeholder="reader@example.com" required />
+              </label>
+              <button class="btn btn-secondary" type="submit">Subscribe</button>
+              <p class="caption text-background opacity-70">No growth hacks. No daily noise. Unsubscribe whenever the room gets too full.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-wide site-footer__inner">
+      <div class="stack">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">S</span>
+          <span class="brand__text">
+            <span class="brand__name">The Still Current</span>
+            <span class="brand__tagline">Essays in a quieter key</span>
+          </span>
+        </a>
+        <p class="caption">An independent digital magazine for readers who still believe attention is a craft.</p>
+      </div>
+      <nav class="cluster" aria-label="Footer navigation">
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="article.html">Article</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var themeButtons = document.querySelectorAll('[aria-label="Toggle theme"]');
+      themeButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          document.documentElement.classList.toggle('dark');
+        });
+      });
+
+      var menuButtons = document.querySelectorAll('[aria-label="Toggle menu"]');
+      menuButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          var isOpen = document.body.classList.toggle('nav-open');
+          button.setAttribute('aria-expanded', String(isOpen));
+        });
+      });
+    })();
+  </script>
+</body>
 </html>
